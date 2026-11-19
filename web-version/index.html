@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- HEADER -->
+        <header>
+            <h1>ROCK PAPER SCISSORS</h1>
+            <p>Challenge the computer. Win the match.</p>
+        </header>
+
+
+        <!-- MATCH SETTINGS -->
+        <section class="settings">
+
+            <label for="match-format">SELECT MATCH FORMAT</label>
+
+            <select id="match-format">
+                <option value="3">Best of 3</option>
+                <option value="5" selected>Best of 5</option>
+                <option value="7">Best of 7</option>
+            </select>
+
+            <button id="start-button">START GAME</button>
+
+        </section>
+
+
+        <!-- SCOREBOARD -->
+        <section class="scoreboard">
+
+            <div class="score-box">
+                <h2>YOU</h2>
+                <p id="player-score">0</p>
+            </div>
+
+            <div class="versus">
+                <h2>VS</h2>
+            </div>
+
+            <div class="score-box">
+                <h2>COMPUTER</h2>
+                <p id="computer-score">0</p>
+            </div>
+
+        </section>
+
+
+        <!-- GAME AREA -->
+        <section class="game-area">
+
+            <h2>MAKE YOUR MOVE</h2>
+
+            <div class="choices">
+
+                <button class="choice" data-choice="rock">
+                    ✊
+                    <span>ROCK</span>
+                </button>
+
+                <button class="choice" data-choice="paper">
+                    ✋
+                    <span>PAPER</span>
+                </button>
+
+                <button class="choice" data-choice="scissors">
+                    ✌️
+                    <span>SCISSORS</span>
+                </button>
+
+            </div>
+
+            <div class="results">
+
+                <p id="player-choice">Your choice: -</p>
+
+                <p id="computer-choice">Computer choice: -</p>
+
+                <h3 id="result-message">
+                    Press START GAME to begin.
+                </h3>
+
+            </div>
+
+        </section>
+
+
+        <!-- GAME INFORMATION -->
+        <section class="game-information">
+
+            <h2>MATCH INFORMATION</h2>
+
+            <p>Rounds needed to win: <strong id="target-score">3</strong></p>
+
+            <p>Rounds played: <strong id="rounds-played">0</strong></p>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+        <section class="statistics">
+
+            <h2>YOUR STATISTICS</h2>
+
+            <div class="stats-grid">
+
+                <div class="stat-box">
+                    <h3 id="matches-played">0</h3>
+                    <p>Matches Played</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3 id="matches-won">0</h3>
+                    <p>Matches Won</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3 id="matches-lost">0</h3>
+                    <p>Matches Lost</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HISTORY -->
+        <section class="history">
+
+            <h2>RECENT MATCHES</h2>
+
+            <ul id="match-history">
+                <li>No matches played yet.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p>by michael wawiny</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
