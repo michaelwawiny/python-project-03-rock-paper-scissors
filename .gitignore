@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Temporary editor files
+*.swp
+*.swo
+*~
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables
+.env
+.env.*
